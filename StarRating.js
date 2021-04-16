@@ -144,6 +144,7 @@ class StarRating extends Component {
 
       const starButtonElement = (
         <AnimatableView
+          testID={`star-${i}`}
           key={i}
           ref={(node) => { this.starRef.push(node); }}
         >
